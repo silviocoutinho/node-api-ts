@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "test:staged": "jest"
   },
   "keywords": [],
   "author": "Silvio F. Coutinho <silviofc79@gmail.com>",
@@ -24,6 +25,7 @@
     "jest": "^28.1.0",
     "lint-staged": "^12.4.1",
     "ts-jest": "^28.0.2",
+    "ts-node": "^10.8.0",
     "typescript": "^4.6.4"
   }
 }
