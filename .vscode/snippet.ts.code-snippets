@@ -1,0 +1,84 @@
+{
+	// Place your clean-node-api workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"Log to console": {
+		"prefix": "clg",
+		"body": ["console.log('$1')", "$2" ],
+		"description": "Console.log..."
+	},
+	"Test method": {
+		"prefix": "tst",
+		"body": [
+		   "test('$1', () => {", 
+			"\t",
+			"})"
+		],
+		"description": "Test method  template"
+	},
+	"Test method with skip": {
+	   "prefix": "tsk",
+	   "body": [
+		  "test.skip('$1', () => {$2})"
+	   ],
+	   "description": "Test method  template with skip"
+   },
+   "Describe method": {
+	   "prefix": "dsc",
+	   "body": [
+		  "describe('$1', () => {", 
+		   "\ttest('$2', () => {$3})",
+		   "})"
+	   ],
+	   "description": "Describe method template"
+   },
+   "Describe async method": {
+	"prefix": "dscasy",
+	"body": [
+	   "describe('$1', async() => {", 
+		"\ttest('$2', () => {$3})",
+		"})"
+	],
+	"description": "Describe method template"
+	},
+	"private readonly": {
+		"prefix": "prr",
+		"body": ["private readonly $1: $2" ],
+		"description": "Create Private Read Only Variable"
+	},
+	"Constructor method": {
+		"prefix": "cnm",
+		"body": [
+		   "constructor ($1: $2) {", 
+			"\t$1",
+			"}"
+		],
+		"description": "Constructor method template"
+	},
+	"return new Promise resolve ": {
+		"prefix": "prores",
+		"body": ["return new Promise(resolve => resolve($1))" ],
+		"description": "Return new Promise with Resolve..."
+	},
+	"return new Promise reject ": {
+		"prefix": "prorej",
+		"body": ["return new Promise(resolve => reject($1))" ],
+		"description": "Return new Promise with Reject..."
+	}
+
+//return new Promise(resolve => resolve(null))
+}
